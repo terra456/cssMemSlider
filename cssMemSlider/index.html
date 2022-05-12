@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Css Mem Slider</title>
 </head>
 <body>
-    
+    <section class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__pagination">
+                <label for="slide1" class="slider__label"></label>
+                <input id="slide1" class="slider__check" type="checkbox">
+                <label for="slide2" class="slider__label"></label>
+                <input id="slide2" class="slider__check" type="checkbox">
+                <label for="slide3" class="slider__label"></label>
+                <input id="slide3" class="slider__check" type="checkbox">
+                <label for="slide4" class="slider__label"></label>
+                <input id="slide4" class="slider__check" type="checkbox">
+            </div>
+            <div class="slider__images">
+                <img class="slider__img slide1">
+                <img class="slider__img slide2">
+                <img class="slider__img slide3">
+                <img class="slider__img slide4">
+            </div>
+            <div class="slider__decription">
+                <p class="slider__desc slide1__desc"></p>
+                <p class="slider__desc slide2__desc"></p>
+                <p class="slider__desc slide3__desc"></p>
+                <p class="slider__desc slide4__desc"></p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
