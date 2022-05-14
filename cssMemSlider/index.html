@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Mem Slider</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="slider">
         <div class="slider__wrapper">
             <div class="slider__pagination">
-                <label for="slide1" class="slider__label"></label>
-                <input id="slide1" class="slider__check" type="checkbox">
-                <label for="slide2" class="slider__label"></label>
-                <input id="slide2" class="slider__check" type="checkbox">
-                <label for="slide3" class="slider__label"></label>
-                <input id="slide3" class="slider__check" type="checkbox">
-                <label for="slide4" class="slider__label"></label>
-                <input id="slide4" class="slider__check" type="checkbox">
+                <input id="slide1" class="slider__check" type="radio" name="slide" checked>
+                <label for="slide1" class="slider__label">
+                    <span class="slider__dot"></span>
+                </label>
+                <input id="slide2" class="slider__check" type="radio" name="slide">
+                <label for="slide2" class="slider__label">
+                    <span class="slider__dot"></span>
+                </label>
+                <input id="slide3" class="slider__check" type="radio" name="slide">
+                <label for="slide3" class="slider__label">
+                    <span class="slider__dot"></span>
+                </label>
+                <input id="slide4" class="slider__check" type="radio" name="slide">
+                <label for="slide4" class="slider__label">
+                    <span class="slider__dot"></span>
+                </label>
+                <img class="slider__img slide1" src="./assets/images/01.jpg">
+                <img class="slider__img slide2" src="./assets/images/02.jpg">
+                <img class="slider__img slide3" src="./assets/images/03.jpg">
+                <img class="slider__img slide4" src="./assets/images/04.jpg">
             </div>
             <div class="slider__images">
-                <img class="slider__img slide1">
-                <img class="slider__img slide2">
-                <img class="slider__img slide3">
-                <img class="slider__img slide4">
             </div>
             <div class="slider__decription">
                 <p class="slider__desc slide1__desc"></p>

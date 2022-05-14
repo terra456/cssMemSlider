@@ -1,0 +1,115 @@
+.slider {
+    background-color: rgb(53, 53, 53);
+}
+
+.slider__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider__pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slider__check {
+    display: none;
+}
+
+.slider__label {
+    padding: 10px;
+}
+
+.slider__label:hover {
+    cursor: pointer;
+}
+
+.slider__dot {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(35, 174, 192);
+    border: 3px solid rgb(35, 174, 192);
+    border-radius: 50%;
+}
+
+.slider__label:hover .slider__dot {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.slider__label:active .slider__dot {
+    opacity: 0.5;
+}
+
+.slider__check:checked + .slider__label .slider__dot {
+    background-color: transparent;
+    border: 3px solid rgb(35, 174, 192);
+}
+
+.slider__check:checked + .slider__label:hover .slider__dot {
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.slider__images {
+    margin: 30px auto;
+    width: 640px;
+    height: 512px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* .slider__img {
+    position: relative;
+} */
+
+#slide1:checked ~ img:not(:nth-of-type(1)) {
+    display: none;
+}
+
+#slide1:checked ~ img:nth-of-type(1) {
+    animation: slider-right 1s;
+}
+
+#slide2:checked ~ img:not(:nth-of-type(2)) {
+    display: none;
+}
+
+#slide2:checked ~ img:nth-of-type(1) {
+    animation: slider-right 1s;
+}
+
+#slide2:checked ~ img:nth-of-type(2) {
+    animation: slider-right 1s;
+}
+
+#slide3:checked ~ img:not(:nth-of-type(3)) {
+    display: none;
+}
+
+#slide3:checked ~ img:nth-of-type(3) {
+    animation: slider-right 1s;
+}
+
+#slide4:checked ~ img:not(:nth-of-type(4)) {
+    display: none;
+}
+
+#slide4:checked ~ img:nth-of-type(4) {
+    animation: slider-right 1s;
+}
+
+@keyframes slider-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
